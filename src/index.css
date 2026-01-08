@@ -1,0 +1,59 @@
+@import "tailwindcss";
+/* @import '@shadcn/ui/styles.css';
+@import "tw-animate-css"; */
+
+html,body,#root {
+  height: 100%;
+}
+
+@theme {
+  /* ───────── Layout / Shape ───────── */
+  --radius: 0.625rem;
+
+  /* ───────── Core surface colors ───────── */
+  --color-background:           oklch(0.985 0     0);   /* near-white */
+  --color-foreground:           oklch(0.18  0     0);   /* deep gray text */
+
+  --color-card:                 oklch(1     0     0);   /* pure white */
+  --color-card-foreground:      oklch(0.18  0     0);   /* deep gray text */
+
+  --color-popover:              oklch(1     0     0);
+  --color-popover-foreground:   oklch(0.18  0     0);
+
+  /* ───────── Brand / Accent colors ───────── */
+  --color-primary:              oklch(0.50  0.15  260); /* corporate blue */
+  --color-primary-foreground:   oklch(0.99  0     0);   /* white text */
+
+  --color-secondary:            oklch(0.90  0.05  260); /* pale blue */
+  --color-secondary-foreground: oklch(0.25  0.02  260); /* dark blue text */
+
+  --color-muted:                oklch(0.94  0.03  260); /* subtle background/border */
+  --color-muted-foreground:     oklch(0.40  0.05  260); /* secondary text */
+
+  --color-accent:               oklch(0.60  0.18  200); /* fresh teal */
+  --color-accent-foreground:    oklch(0.99  0     0);   /* white text */
+
+  --color-destructive:          oklch(0.55  0.22  25);  /* warning/error red */
+
+  /* ───────── Controls / Lines ───────── */
+  --color-border:               oklch(0.90  0     0);   /* light border */
+  --color-input:                oklch(0.4656 0 237.81);
+  --color-ring:                 oklch(0.50  0.15  260); /* focus ring in brand color */
+
+  /* ───────── Data visualization ───────── */
+  --color-chart-1:              oklch(0.60  0.18  260); /* blue */
+  --color-chart-2:              oklch(0.60  0.14  190); /* teal */
+  --color-chart-3:              oklch(0.65  0.18   70); /* orange */
+  --color-chart-4:              oklch(0.60  0.16  315); /* purple */
+  --color-chart-5:              oklch(0.60  0.16  140); /* green */
+
+  /* ───────── Sidebar (optional) ───────── */
+  --color-sidebar:                      oklch(0.985 0     0);
+  --color-sidebar-foreground:           oklch(0.18  0     0);
+  --color-sidebar-primary:              oklch(0.50  0.15  260);
+  --color-sidebar-primary-foreground:   oklch(0.99  0     0);
+  --color-sidebar-accent:               oklch(0.90  0.05  260);
+  --color-sidebar-accent-foreground:    oklch(0.25  0.02  260);
+  --color-sidebar-border:               oklch(0.90  0     0);
+  --color-sidebar-ring:                 oklch(0.50  0.15  260);
+}
