@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import { useParams, useLocation } from 'react-router-dom'
 import { useTranslation } from '@/context/i18n/useTranslation'
 import type { Serp } from '@/interfaces'
@@ -31,7 +31,7 @@ export function useKeywordPage() {
     r.title.toLowerCase().includes(search.toLowerCase())
   )
 
-  const columns = getColumns(t)
+  const columns = useMemo(() => getColumns(t), [t])
 
   return { t, search, setSearch, filteredRows, columns, keyword }
 }
