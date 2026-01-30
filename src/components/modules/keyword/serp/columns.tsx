@@ -11,6 +11,9 @@ export function getColumns(t: (key: string) => string): ColumnDef<Serp>[] {
     {
       accessorKey: 'position',
       header: t('serp.position'),
+      cell: ({ row, table }) => {
+        return table.getSortedRowModel().rows.findIndex((r) => r.id === row.id) + 1
+      },
       size: 40
     },
     {

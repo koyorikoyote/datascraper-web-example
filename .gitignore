@@ -27,4 +27,3 @@ dist-ssr
 
 .env
 daily_report.py
-.env.example
